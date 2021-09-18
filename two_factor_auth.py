@@ -26,7 +26,7 @@ def sendSMS():
 
     message = client.messages.create(
     to=contact['mobile'], 
-    from_=twilio_account.TEST_PHONE_NUMBER,
+    from_=twilio_account.TEST_SOURCE_NUMBER,
     body=sms_code)
 
     print(message.sid)
